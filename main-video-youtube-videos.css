@@ -1,0 +1,614 @@
+.main-video-container{
+    margin-bottom: 5px;
+    width: 877px;
+}
+
+.thumbnail-main-video{
+    margin-right: 7px;
+}
+
+.main-video-info{
+    width:877px;
+}
+
+.thumbnail-main-video img{
+    border-radius: 10px;
+    width: 877px;
+}
+
+.main-video-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    color: white;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    width: 840px;
+}
+
+.profile-picture img{
+    width: 45px;
+    border-radius: 25px;
+}
+
+.profile-picture img:hover{
+    cursor: pointer;
+}
+
+.main-video-author{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.main-video-stats{
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+
+    margin-left: 10px;
+}
+
+.main-subscribe-button{
+    margin-left: 20px;
+}
+
+.main-subscribe-button button{
+    height: 37px;
+    width: 92px;
+    border-radius: 50px;
+    border: 0;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.channel-info-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.channel-info{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.left-section{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-wrapper{
+    display: flex;
+}
+
+.like-button img,
+.dislike-button img,
+.share-button img,
+.download-button img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.dislike-button img{
+    margin-right: 10px;
+}
+
+.left-section{
+    margin-right: 6px;
+    padding-left:0px;
+}
+
+.like-button,
+.dislike-button,
+.share-button,
+.download-button,
+.more-button{
+    height: 37px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255,0.8);
+    font-size: 14px;
+    font-weight: 500;
+    border-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    justify-content: center;
+}
+
+.like-button{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.like-button:hover,
+.dislike-button:hover,
+.share-button:hover,
+.download-button:hover,
+.more-button:hover
+{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,1);
+}
+
+.like-button:hover .tooltip,
+.dislike-button:hover .tooltip,
+.share-button:hover .tooltip,
+.download-button:hover .tooltip,
+.more-button:hover .tooltip{
+    opacity: 1;
+}
+
+
+.tooltip{
+    position: absolute;
+    background-color: rgb(75 75 75 / 70%);
+    color: white;
+    bottom: -45px;
+    border-radius: 4px;
+    padding: 12px 8px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    text-wrap: nowrap;
+    z-index: 100;
+}
+
+.main-subscribe-button button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.9);
+}
+
+.dislike-button{
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+
+.share-button,
+.download-button,
+.more-button,
+.cancel-button,
+.comment-button{
+    border-radius: 50px;
+}
+
+.dislike-button img{
+    transform: scaleX(-1);
+}
+
+.more-button{
+    border-radius: 50px;
+    width: 37px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.more-button span{
+    margin-bottom: 7px;
+}
+
+.download-text,
+.share-text{
+    margin-left: 6px;
+    padding-right: 15px;
+}
+
+.likes-number{
+    padding-left:0px;
+    margin-left: 6px;
+    padding-right: 10px;
+}
+
+.seperator{
+    color: black;
+    position: relative;
+    height: 37px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255,0.8);
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    color: rgb(84, 84, 84);
+}
+
+.video-description{
+    background-color: rgb(55, 55, 55);
+    width: 858px;
+    height: 92px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.video-description a{
+    color: rgb(62, 166, 255);
+}
+
+.hashtags{
+    color: rgb(146, 145, 145);
+}
+
+.video-description-stats{
+    font-weight: 500;
+}
+
+.video-description:hover{
+    cursor: pointer;
+    background-color: rgb(73, 72, 72);
+}
+
+.comments-count{
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.comments-count-span{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.comments-sort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+
+.comments-sort span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.comments-sort img{
+    width: 24px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+
+.comments-main-container{
+    margin-top: 20px;
+}
+
+.comments-grid{
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.comments-grid:hover .corner{
+    opacity: 1;
+}
+
+.corner{
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+}
+
+.comment-author{
+    display: flex;
+    color: white;
+    font-size: 12px;
+}
+
+.comment-date{
+    color: rgb(170, 170, 170);
+}
+
+.comment-container{
+    margin-left: 10px;
+}
+
+.comment{
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 20px
+}
+
+.comment a{
+    color: rgb(62, 166, 255);;
+}
+
+.comments-image img{
+    width: 45px;
+    border-radius: 25px;
+}
+
+.comments-image img:hover{
+    cursor: pointer;
+}
+
+.comment-buttons{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.comment-button-like,
+.comment-button-dislike,
+.comment-reply{
+    background-color: transparent;
+    border: 0;
+}
+
+.comment-button-like{
+    position: relative;
+    display: flex;
+
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-left: -3px;
+
+}
+
+.comment-button-like:hover .tooltip-for-like{
+    opacity: 1;
+}
+
+.tooltip-for-like{
+    position: absolute;
+    background-color: rgb(75 75 75 / 90%);
+    color: white;
+    bottom: -45px;
+    border-radius: 4px;
+    padding: 10px 8px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.35s;
+    pointer-events: none;
+    z-index: 100;
+    text-wrap: nowrap;
+}
+
+.comment-button-like:hover,
+.comment-button-dislike:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 14px;
+}
+
+.comment-button-dislike{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-left: 14px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-button-dislike:hover .tooltip-for-dislike{
+    opacity: 1;
+}
+
+.tooltip-for-dislike{
+    position: absolute;
+    background-color: rgb(75 75 75 / 90%);
+    color: white;
+    bottom: -45px;
+    border-radius: 4px;
+    padding: 10px 8px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.35s;
+    pointer-events: none;
+    z-index: 100;
+    text-wrap: nowrap;
+}
+
+.comment-button-like img,
+.comment-button-dislike img{
+    width: 20px;
+    height: 20px;
+}
+
+.comment-button-like img{
+    position: absolute;
+    left: 0;
+    padding: 2px 1px 1px 5px;
+}
+
+/*.comment-button-dislike img{
+    transform: scaleX(-1);
+}*/
+
+.comment-likes-number p{
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+}
+
+.liked-comments{
+    margin-left: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.liked-comments:hover .tooltip-liked-comment{
+    opacity: 1;
+}
+
+.liked-comments img{
+    background-color: pink;
+    width: 15px;
+    border-radius: 25px;
+}
+
+.heart{
+    margin-left: 10px;
+    position: absolute;
+    top: 6px;
+    right: -10px;
+}
+
+.heart img{
+    background-color: transparent;
+    width: 17px;
+    border-radius: 25px;
+}
+
+.tooltip-liked-comment{
+    position: absolute;
+    background-color: rgb(75 75 75 / 90%);
+    color: white;
+    bottom: -45px;
+    border-radius: 4px;
+    padding: 10px 8px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.35s;
+    pointer-events: none;
+    z-index: 100;
+    text-wrap: nowrap;
+}
+
+
+.comment-reply{
+    width: 60px;
+    height: 30px;
+    padding: 2px;
+    color: white;
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.comment-reply:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 16px;
+}
+
+.add-comment input{
+    border: 0;
+    border-bottom: 1px solid grey;
+    background: transparent;
+    width: 805px;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+}
+
+.add-comment input:focus{
+    color: white;
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+
+.add-comment-buttons-grid{
+    display: grid;
+    width: 834px;
+    grid-template-columns: 1fr 200px;
+}
+
+.comment-actions-button{
+    display: flex;
+}
+
+.cancel-button{
+    height: 37px;
+    margin-top: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-width: 0;
+}
+
+.comment-button{
+    height: 37px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255,0.5);
+    font-size: 14px;
+    font-weight: 500;
+    border-width: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    margin-left: 8px;
+}
+
+.cancel-button:hover
+{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.comment-button:hover
+{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,1);
+}
+
+.cancel-text{
+    padding: 0 16px;
+}
+
+.comment-text{
+    padding: 0 16px;
+}
+
+.add-comment-button-emoji{
+    border: 0;
+
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+
+    margin-left: -10px;
+    background-color: rgba(255, 255, 255,0.1);
+
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-comment-button-emoji:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 14px;
+}
+
+.add-comment-button-emoji img{
+    width: 20px;
+    height: 20px;
+}

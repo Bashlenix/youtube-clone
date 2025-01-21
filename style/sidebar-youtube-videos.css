@@ -1,0 +1,128 @@
+.video-container:hover{
+    cursor: pointer;
+}
+
+.video-container:hover .actions-list,
+.video-container:hover .add-to-queue,
+.video-container:hover .watch-later{
+    opacity: 1;
+}
+
+
+.video-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.actions-list{
+    color: white;
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.thumbnail-video{
+    margin-right: 7px;
+    position: relative;
+}
+
+.thumbnail-video img{
+    border-radius: 10px;
+}
+
+.add-to-queue, .watch-later{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 4px;
+    margin-top: 6px;
+    border-radius: 3px;
+    opacity: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.watch-later{
+    padding-top: 2px;
+}
+
+.add-to-queue{
+    top: 35px;
+}
+
+.add-to-queue img, .watch-later img{
+    width: 25px;
+}
+
+.watch-later img{
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.video-length{
+    color: white;
+    background-color: rgb(37, 37, 37);
+    font-size: 12px;
+    padding: 1px 2px;
+    border-radius: 3px;
+
+    position: absolute;
+    bottom: 9px;
+    right: 4px;
+}
+
+.video-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+    width: 206px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.tooltip-title{
+    position: absolute;
+    background-color: rgb(75 75 75 / 70%);
+    color: white;
+    bottom: -40px;
+    border-radius: 4px;
+    padding: 0px 8px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.55s;
+    pointer-events: none;
+    z-index: 100;
+    width: 270px;
+}
+
+.video-title:hover .tooltip-title{
+    opacity: 1;
+}
+
+.video-author{
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.video-stats{
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+}
+
+.verified{
+    background-color: rgb(170, 170, 170);
+    color: black;
+    padding: 1px 3px;
+    font-size: 10px;
+    border-radius: 50%;
+    margin-left: 2px;
+    
+}

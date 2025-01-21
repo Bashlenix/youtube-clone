@@ -1,0 +1,240 @@
+
+.header-youtube-header{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    height: 50px;
+    column-gap: 100px;
+    margin-bottom: 30px;
+    margin-top: 2px;
+}
+
+.header-left,
+.header-middle,
+.header-right{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-actions{
+    background-color: transparent;
+    border: 1px solid transparent;
+    height: 37px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.header-actions:hover{
+    background-color: rgba(255, 255, 255,0.3);
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.header-actions img{
+    width: 25px;
+}
+
+.header-logo{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    position: relative;
+}
+
+.header-logo img{
+    width: 100px;
+}
+
+.header-logo:hover .tooltip{
+    opacity: 1;
+}
+
+.search-box{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255,0.2);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 536px;
+    height: 40px;
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    color: white;
+    padding-left: 6px;
+    margin-left: 20px;
+}
+
+.search-box:hover{
+    cursor:text;
+}
+
+.search-box:focus{
+    border: 0;
+}
+
+.search-box::placeholder{
+    padding-left: 10px;
+}
+
+.search-button{
+    background-color: rgb(37, 37, 37);
+    border: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 42px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button:hover{
+    cursor: pointer;
+}
+
+.search-button img{
+    width: 21px;
+}
+
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+
+.search-voice{
+    background-color: rgba(255, 255, 255,0.2);
+    border: 1px solid black;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+}
+
+.search-voice:hover{
+    background-color: rgba(255, 255, 255,0.3);
+    cursor: pointer;
+}
+
+.search-voice img{
+    width: 22px;
+}
+
+.search-voice:hover .tooltip{
+    opacity: 1;
+}
+
+.create{
+    background-color: transparent;
+    border: 0;
+    height: 37px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.create:hover{
+    background-color: rgba(255, 255, 255,0.3);
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.create img{
+    width: 25px;
+}
+
+.create:hover .tooltip{
+    opacity: 1;
+}
+
+.notifications{
+    background-color: transparent;
+    border: 0;
+    height: 37px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+}
+
+.notifications:hover{
+    background-color: rgba(255, 255, 255,0.3);
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.notifications img{
+    width: 25px;
+}
+
+.tooltip{
+    position: absolute;
+    background-color: rgb(75 75 75 / 70%);
+    color: white;
+    bottom: -45px;
+    border-radius: 4px;
+    padding: 12px 8px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    text-wrap: nowrap;
+    z-index: 100;
+}
+
+
+.notifications:hover .tooltip{
+    opacity: 1;
+}
+
+.channel-logo{
+    background-color: transparent;
+    border: 0;
+    height: 37px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.channel-logo:hover{
+    cursor: pointer;
+}
+
+.channel-logo img{
+    width: 32px;
+    border-radius: 25px;
+}
+
+.header-left{
+    justify-content: left;
+    align-items: center;
+}
+
+.header-middle{
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right{
+    justify-content: right;
+    align-items: center;
+}
+
